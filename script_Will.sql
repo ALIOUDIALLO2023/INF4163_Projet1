@@ -1,6 +1,6 @@
-USE Serie_TD3;
+USE Projet1;
 
-CREATE TABLE [dbo].[Retail_Transactions_Dataset$] (
+CREATE TABLE [dbo].[ToutesTransactions] (
 [Transaction_ID] float NOT NULL,
 [Date] datetime NOT NULL,
 [Customer_Name] nvarchar(255) NOT NULL,
@@ -18,6 +18,7 @@ CREATE TABLE [dbo].[Retail_Transactions_Dataset$] (
 
 /*
  Exercice 3.1 - Importation des données
+     Les données ont été importés à l'aide de SSMS
  */
 
 --1)
@@ -42,8 +43,3 @@ SELECT
 FROM ToutesTransactions
 GROUP BY Customer_Category
 ORDER BY Customer_Category;
-
-CREATE VIEW myView AS
-SELECT DISTINCT
-    Customer_Name
-FROM ToutesTransactions;
