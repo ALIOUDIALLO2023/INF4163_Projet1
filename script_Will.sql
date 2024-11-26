@@ -13,7 +13,7 @@ CREATE TABLE [dbo].[ToutesTransactions] (
 [Discount_Applied] bit NOT NULL,
 [Customer_Category] nvarchar(255) NOT NULL,
 [Season] nvarchar(255) NOT NULL,
-[Promotion] nvarchar(255) NOT NULL
+[Promotion] nvarchar(255)
 );
 
 /*
